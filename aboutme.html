@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Ishar Keshu | UX/ UI Designer</title>
+    <!-- BOOTSTRAP --->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href ="css/bootstrap-grid.css" />
     <!--- Google Fonts--->
     <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,700|Heebo:400,500" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -21,58 +25,55 @@
   </script>
   </head>
   <body>
-                          <!--Nav Bar -->
-<nav id="navbar">
-  <nav class="innernav">
-    <a href="index.html"><div class="logowrapper">
-      <img src ='images/navlogo.png' alt= "Ishar Keshu Logo" class ="logo" />
+  <!--Nav Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" href="#"><img src ='images/navlogo.png' alt= "Ishar Keshu Logo" class="d-inline-block align-top" /></a>
       <h1 class = "logoname">Ishar Keshu</h1>
-    </div></a>
-    <div class="mainNav">
-      <div class="collection">
-        <a href="index.html#landing">about</a>
-      </div>
-      <div class="collection">
-        <a href="index.html#portfolio">work</a>
-      </div>
-      <div class="collection">
-        <div class="hirebutton">
-        <a href="index.html#contact" class="hire-button">hire me</a>
-        </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="#" style="cursor: default">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="aboutme.html">About</a>
+        <a class="nav-item nav-link" href="#portfolio">Work</a>
+        <a class="nav-item nav-link" href="#contact">Hire Me</a>
       </div>
     </div>
   </nav>
-</nav>
 
 <!-- ABOUT ME PAGE -->
 <div id ="about">
-  <div class="aboutbox">
-    <div class="leftabout">
-    <h2 class="aboutheader">Hi I'm Ishar Keshu, a UX/ UI Designer dreaming of sunny California and Texas</h2>
+  <div class="container">
+    <div class="row">
+    <div class="col-6-lg">
+    <h2 class="aboutheader"> Hi I'm Ishar Keshu!</h2>
     <p>
       For as long as I can remember, art has always played a huge role in my life. I used to get into trouble in elementary school for doodling instead of taking notes in class. Later in high school and college, I took many art classes and improved on my skills. It was only half way through college career that I decided to pursue my passion for creating visual designs and switched my major from Business Administration to Graphic/ Web Design.
     </p>
     </div>
-    <div class="aboutpicture1">
+    <div class="col-6-lg">
       <img src="images/longhair.jpg" alt="me" class="aboutpic" />
     </div>
   </div>
+</div>
 
-  <div class="aboutbox">
-    <div class="leftabout">
+  <div class="container">
+    <div class="row">
       <p>
         Starting in high school I became fascinated with spiritual practices such as meditation (which I still do every morning). It was only until a couple of years later in college that I decided to try a yoga class out after my gym had closed down temporarily due to a flood. Immediately I was captivated by the calming but refreshing side effects of a yoga class. The next day, I cancelled my gym membership and started a yoga membership. The next month, I signed up for a 9-month long yoga teaching training course which I completed and have been teaching ever since!
       </p>
       <p>
         I’m also obsessed with tea! More specifically I enjoy Chinese style loose leaf teas, after I spent a year working in a tea store in the heart of San Francisco’s Chinatown neighborhood. The experience not only taught me how to make a killer cup of tea but also how to thrive in fast paced work environments. If you like what you've seen and want to chat, feel free to get in touch!
       </p>
-    </div>
-    <div class="aboutpicture2">
-    <img src="images/yoga.jpg" alt="yoga" class="yogapic"  />
 
+    <div class="col-6-lg">
+    <img src="images/yoga.jpg" alt="yoga" class="yogapic"  />
+  </div>
     </div>
   </div>
 </div>
+
 <!-- Footer -->
 <footer id="footer">
   <div class ="footerbar">

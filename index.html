@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Ishar Keshu | UX/UI Designer</title>
+    <!-- BOOTSTRAP --->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href ="css/bootstrap-grid.css" />
     <!--- Google Fonts and CSS--->
     <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,700|Heebo:400,500" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -23,43 +27,51 @@
   </head>
   <body>
 
-                          <!--Nav Bar -->
-<nav id="navbar">
-  <nav class="innernav">
-    <div class="logowrapper">
-      <img src ='images/navlogo.png' alt= "Ishar Keshu Logo" class ="logo" />
-      <h1 class = "logoname">Ishar Keshu</h1>
+
+<!--BOOTSTRAP NAV -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <a class="navbar-brand" href="#"><img src ='images/navlogo.png' alt= "Ishar Keshu Logo" class="d-inline-block align-top" /></a>
+    <h1 class = "logoname">Ishar Keshu</h1>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="#" style="cursor: default">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="aboutme.html">About</a>
+      <a class="nav-item nav-link" href="#portfolio">Work</a>
+      <a class="nav-item nav-link" href="#contact">Hire Me</a>
     </div>
-    <div class="mainNav">
-      <div class="collection">
-        <a href="aboutme.html">about</a>
-      </div>
-      <div class="collection">
-        <a href="#portfolio">work</a>
-      </div>
-      <div class="collection">
-        <div class="hirebutton">
-        <a href="#contact" class="hire-button">hire me</a>
-        </div>
-      </div>
-    </div>
-  </nav>
+  </div>
+
 </nav>
 
-                          <!--Landing Page -->
+
+
+
+                          <!--Landing Page-->
 <div id="landing">
   <div class="splash">
     <img src="images/landingbg.jpg" alt="imagehero" class="imagehero" />
-    <div class="landingtitle">
-      <h1 class="landingheading1 animated pulse">Hello there! I'm Ishar Keshu,</h1>
-      <h1 style="font-weight:300" class="landingheading2">a creative UX/UI designer</h1>
+
+      <div class="landingtitle">
+          <div class="container">
+        <h1 class="landingheading1 animated pulse">Hello there! I'm Ishar Keshu</h1>
+        <h2 style="font-weight:200" class="landingheading2">a UX/UI designer dreaming of sunny California and Texas.</h1>
+          <a href="#portfolio" class="arrow-down"></a>
+      </div>
+          </div>
+
     </div>
-    <a href="#portfolio" class="arrow-down"></a>
+
   </div>
-</div>
+
 
                           <!--  Portfolio -->
 <div id="portfolio">
+  <div class="white">
+  <div class="container">
   <div class="portfoliopage">
     <h1 class="title">Portfolio</h1>
   <div class="portfoliocontainer">
@@ -111,12 +123,14 @@
         <a href ="tastepad.html" class="casestudy"> view project</a>
     </div>
   </div>
+  </div>
+  </div>
 </div>
 
 
 <div id=contact>
 <h1 class="title" style="color: white"> Let's stay in touch ...</h1>                          <!--Contact -->
-<div class="formdiv">
+<div class=" formdiv container">
   <form action="https://formspree.io/ishkeshu@gmail.com" method="post">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="firstname" placeholder="Your name">

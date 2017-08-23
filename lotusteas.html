@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Ishar Keshu | UX/ UI Designer</title>
+    <!-- BOOTSTRAP --->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href ="css/bootstrap-grid.css" />
     <!--- Google Fonts--->
     <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,700|Heebo:400,500" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -22,93 +26,124 @@
   </head>
   <body>
     <!--Nav Bar -->
-    <nav id="navbar">
-      <nav class="innernav">
-        <a href="index.html">
-          <div class="logowrapper">
-            <img src ='images/navlogo.png' alt= "Ishar Keshu Logo" class ="logo" />
-            <h1 class = "logoname">Ishar Keshu</h1>
-          </div></a>
-          <div class="mainNav">
-            <div class="collection">
-              <a href="aboutme.html">about</a>
-            </div>
-            <div class="collection">
-              <a href="index.html#portfolio">work</a>
-            </div>
-            <div class="collection">
-              <div class="hirebutton">
-                <a href="index.html#contact" class="hire-button">hire me</a>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand" href="#"><img src ='images/navlogo.png' alt= "Ishar Keshu Logo" class="d-inline-block align-top" /></a>
+        <h1 class = "logoname">Ishar Keshu</h1>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#" style="cursor: default">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="aboutme.html">About</a>
+          <a class="nav-item nav-link" href="#portfolio">Work</a>
+          <a class="nav-item nav-link" href="#contact">Hire Me</a>
+        </div>
+      </div>
+    </nav>
 
     <div id="lotusteas">
-      <div class="section">
+      <div class="container">
         <h1 class="splashtitle1"> Lotus Teas</h1>
         <h2 class="splashtitle2">Chinese Tea Website</h2>
         <img src="images/ltmockup2.png" class="splash1" />
       </div>
-    <div class="research">
-    <h2 class="title2"> Research (Summary, Problems & Solutions) </h1>
-      <h3>Summary</h3>
-        <p class="researchtext">
-        Lotus teas emerged in response to the stagnant Chinese tea market in America. Its aim is to provide an authentic experience of Chinese teas to the Western world. Users can order Chinese loose-leaf teas with a simple click of a button on Lotus Tea's website!
-        </p>
-      <h3>Problem</h3>
-          <p class="researchtext">
-        The tea market in the United States isn’t well established, more specifically the emphasis on Chinese tea. The tea that most people know about come from large commercialized companies such as Starbucks and Teavana. Many of these companies often falsely advertise their teas to be “authentic” and almost always adulterate the teas by adding sweeteners or other additives that take away from the quality of the tea. Many tea stores that specialize in Chinese tea are often overlooked as they don’t focus on their marketing, UX and their brand compared to the big corporations.  By creating Lotus Teas, we can deliver fresh unadulterated Chinese traditional teas to the public.
-        </p>
-      <h3>Solution</h3>
-      <p class="researchtext">
-        The solution to this aforementioned problem is to focus on our branding and marketing skills, two aspects Chinese tea stores in the United States often neglect. In addition, by explaining the health benefits of the teas (something Starbucks and Teavana hasn’t done) we can attract customers who want to drink a tasty beverage which is also in turn good for their health!
-      </p>
-
-    </div>
-    <div class="design">
-      <div class="subdiv">
-        <h1 class="subheading"> Style Guide </h1>
+    <div class="purple">
+      <div class="container">
+        <h2 class="title2"> Summary and Research </h1>
+          <h3>Summary</h3>
+            <p>
+            Lotus teas emerged in response to the stagnant Chinese tea market in America. Its aim is to provide an authentic experience of Chinese teas to the Western world. Users can order Chinese loose-leaf teas with a simple click of a button on Lotus Tea's website!
+            </p>
+          <h3>Problem</h3>
+              <p>
+            The tea market in the United States isn’t well established, more specifically the emphasis on Chinese tea. The tea that most people know about come from large commercialized companies such as Starbucks and Teavana. Many of these companies often falsely advertise their teas to be “authentic” and almost always adulterate the teas by adding sweeteners or other additives that take away from the quality of the tea. Many tea stores that specialize in Chinese tea are often overlooked as they don’t focus on their marketing, UX and their brand compared to the big corporations.  By creating Lotus Teas, we can deliver fresh unadulterated Chinese traditional teas to the public.
+            </p>
+          <h3>Solution</h3>
+          <p>
+            The solution to this aforementioned problem is to focus on our branding and marketing skills, two aspects Chinese tea stores in the United States often neglect. In addition, by explaining the health benefits of the teas (something Starbucks and Teavana hasn’t done) we can attract customers who want to drink a tasty beverage which is also in turn good for their health!
+          </p>
       </div>
-      <div class="box">
-        <div class="halfboxleft">
-          <img src="images/colorpalette.jpg" alt="styleguide" class="lotusstyle" />
+    </div>
+
+      <div class="logos">
+        <div class="white">
+        <div class="container">
+            <h2> Logos </h2>
+          <p>
+            When designing the logos, I played around with different calligraphy-inspired brushes and asian style designs. However, I ended up choosing the first design as I liked the color scheme and the logo was a little more subtle than the others.
+          </p>
+          <div class="row">
+            <div class="col-md-3 images"><img src="images/ltlogo1.png" alt="Charles" class="personaimg" /></div>
+            <div class="col-md-3 images"><img src="images/ltlogo2.png" alt="Sarah" class="personaimg" /></div>
+            <div class="col-md-3 images"><img src="images/ltlogo3.png" alt="amy" class="personaimg" /></div>
+            <div class="col-md-3 images"><img src="images/ltlogo4.png" alt="amy" class="personaimg" /></div>
+          </div>
+          </div>
         </div>
-        <div class="halfboxright">
+        </div>
 
-        <p class="textbox">
-          Here are my inital sketches of YouCreate's logo. Since the app is a file-sharing app, I wanted to invoke feelings of community and trust through my logo. the first starred item represents unity as the letters Y and C join and become one. The bottom starred logo sketch displays the letters in a representation of a home. The middle starred logo of a Venn Diagram was the logo I finally chose. The letters represent two different ideas coming together and merging as one which I felt aptly described YouCreate.
-          <br>
-          <br />
-          Below you will see the logo in its final stage:
-        </p>
-      </div>
-    </div>
-    <div class="packagefid">
-      <div class="subdiv">
-        <h1 class="subheading" style="font-size: 20px">Packaging & High Fidelity Design </h1>
-      </div>
-      <div class ="wirebox">
-      <div class="leftwirebox">
-        <img src="images/LotusPackage.png" alt="packaging" class="lotuspackage" />
-      </div>
-      <div class="rightwirebox">
-        <img src="images/highfidcrop.png" alt="highfid" class="lotuscrop" />
-        <img src="images/lotushighfid.png" alt="highfid" class="lotusfid" />
-      </div>
-      </div>
-    </div>
-    <div class="lotusfinal">
-      <div class="subdiv">
-        <h1 class="subheading"> Final Website  </h1>
-      </div>
-      <div class="fullbox">
-        <img src="images/lotusweb.png" alt="final site" class="lotusweb" />
-      </div>
-    </div>
-    </div>
-    </div>
+        <div class="styleguide">
+          <div class="purple">
+            <div class="container">
+              <h2> Style Guide </h2>
+            <p>
+              LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
+            </p>
+              </div>
+            </div>
+            <div class="white">
+              <div class="container">
+                <div class="row">
+                  <div class="col images">
+                    <img src="images/colorpalette.jpg" alt="colorpalette" class="lotusstyle" />
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <div class="packagefid">
+          <div class="purple">
+            <div class="container">
+              <h2> Packaging </h2>
+            <p>
+              LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
+            </p>
+              </div>
+            </div>
+            <div class="white" style="background-color: #4992b5">
+              <div class="container">
+                <div class="row">
+                  <div class="col images">
+                    <img src="images/LotusPackage2.png" alt="styleguide" class="lotuspackage" />
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+
+        <div class="lotusfinal">
+          <div class="purple">
+            <div class="container">
+              <h2> Final Website Design</h2>
+            <p>
+              LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM LOREM IPSUM
+            </p>
+              </div>
+            </div>
+            <div class="white">
+              <div class="container">
+                <div class="row">
+                  <div class="col images">
+                    <img src="images/ltdesktop.png" alt="colorpalette" class="lotusstyle" />
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
     <!-- Footer -->
 <footer id="footer">
   <div class ="footerbar">

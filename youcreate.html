@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Ishar Keshu | UX/ UI Designer</title>
+    <!-- BOOTSTRAP --->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href ="css/bootstrap-grid.css" />
     <!--- Google Fonts--->
     <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,700|Heebo:400,500" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -23,27 +27,21 @@
   <body>
 
                           <!--Nav Bar -->
-<nav id="navbar">
-  <nav class="innernav">
-    <a href="index.html"><div class="logowrapper">
-      <img src ='images/navlogo.png' alt= "Ishar Keshu Logo" class ="logo" />
-      <h1 class = "logoname">Ishar Keshu</h1>
-    </div></a>
-    <div class="mainNav">
-      <div class="collection">
-        <a href="aboutme.html">about</a>
-      </div>
-      <div class="collection">
-        <a href="index.html#portfolio">work</a>
-      </div>
-      <div class="collection">
-        <div class="hirebutton">
-        <a href="index.html#contact" class="hire-button">hire me</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-</nav>
+                          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                            <a class="navbar-brand" href="#"><img src ='images/navlogo.png' alt= "Ishar Keshu Logo" class="d-inline-block align-top" /></a>
+                              <h1 class = "logoname">Ishar Keshu</h1>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                              <div class="navbar-nav">
+                                <a class="nav-item nav-link active" href="#" style="cursor: default">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-item nav-link" href="aboutme.html">About</a>
+                                <a class="nav-item nav-link" href="#portfolio">Work</a>
+                                <a class="nav-item nav-link" href="#contact">Hire Me</a>
+                              </div>
+                            </div>
+                          </nav>
 
 <div id="youcreate">
   <div class ="section">
@@ -54,102 +52,154 @@
     </div>
   </div>
   <div class="research">
-  <h2 class="title2"> Summary </h1>
-      <p class="researchtext">
-        YouCreate is a Software as a Service application which allows users to share content with others. After receiving feedback through surveys, we’ve gathered some information about our participant’s preferences and predispositions when using the internet. The next stage in creating YouCreate is to analyze the strengths, weaknesses, opportunities and threats (the SWOT system) of 3 of our top competitors once the app is launched. This well help us better understand what we need to work on as well as fix in our own app. Our three top Software as Service competitors are Dropbox, Google Drive, and Box.
+    <div class="container">
+  <h2 class="title2"> Summary and Research </h2>
+    <h3>Summary</h3>
+      <p>
+        With the advent of Software as a Service apps such as Dropbox and Google Drive, users were able to store, share and collaborate information with others. The downside of these apps were that saved files often became cluttered once they accumulated. YouCreate was created in order to streamline this process of creating and sharing files.
       </p>
-
+      <h3>Problem</h3>
+        <p>
+          After conducting surveys, it was clear that users wanted to save pages and posts they liked on the internet but were hindered by the disorganization that came with the accumulation of bookmarks and favorites. When looking into our competition, I found that there were a few problems in each major software as a service apps. Box ,for instance, had a 14 day trial but the user would be charged immediately after. This prevents or at least reduces buy-in from customers. One weakness that Google Drive is its package functionality with Google. Because other Google accounts such as Gmail, Youtube and Chrome are linked to Google Drive, signing out of accounts often becomes a hassle. Finally, Dropbox has a poor UX layout which in turn frustrates the user or at the very least makes him or her question the value of Dropbox’s services. Knowing this information, YouCreate aimed to create solutions for all these problems in its development.
+        </p>
+        <h3>Solution</h3>
+        <p>
+          Addressing the issue of UX navigation, I opted for a side-bar navigation. Most websites use a top navigation to navigate through various sub pages and categories. However, I felt that the top bar navigation was only effective when there was a limited amount of categories. Keeping the other issue of disorganization in mind, I employed  a side-bar navigation to keep content orderly. This allows users to add groups and items which are easily accessible. I drew my inspiration off of YouTube’s efficient sidebar navigation. I also wanted to increase investment and buy-in from potential customers by creating a Free version plan for YouCreate alongside the other premium plans. I also changed our pricing tiers to feature our middle priced tier in the center with a larger box frame than the other two. This highlight feature, along with creating a left-to-right descending price scheme are proven methods of increasing sale conversion rates.
+        </p>
+    </div>
   </div>
   <div class="design">
-      <div class="subdiv">
-        <h3 class="subheading"> Personas</h2>
+    <div class="container">
+        <div class="white">
+        <h2> Personas </h2>
+      <p>
+        Through the development of the 3 personas, I was able to gain some additional insights on my potential users. For instance, through Amy's persona, I learned that bookmarking websites often become cluttered so keeping organized bookmark folders might be helpful when developing YouCreate.
+      </p>
+      <div class="row">
+        <div class="col-md-4 images"><img src="images/charles.jpg" alt="Charles" class="personaimg" /></div>
+        <div class="col-md-4 images"><img src="images/sarah.jpg" alt="Sarah" class="personaimg" /></div>
+        <div class="col-md-4 images"><img src="images/amy.jpg" alt="amy" class="personaimg" /></div>
       </div>
-  <div class="box">
-    <div class ="leftboxthird">
-      <div class="persona">
-        <img src="images/charles.jpg" alt="Charles" class="personaimg" />
-      </div>
-    </div>
-    <div class ="leftboxthird">
-      <div class="persona">
-        <img src="images/sarah.jpg" alt="Sarah" class="personaimg" />
-      </div>
-    </div>
-    <div class ="leftboxthird">
-      <div class="persona">
-        <img src="images/amy.jpg" alt="amy" class="personaimg" />
       </div>
     </div>
+    </div>
+
+  <div class ="styleguide">
+    <div class="purple">
+      <div class="container">
+        <h2> Logos</h2>
+        <p>
+          Here are my inital sketches of YouCreate's logo. Since the app is a file-sharing app, I wanted to invoke feelings of community and trust through my logo. the first starred item represents unity as the letters Y and C join and become one. The bottom starred logo sketch displays the letters in a representation of a home. The middle starred logo of a Venn Diagram was the logo I finally chose. The letters represent two different ideas coming together and merging as one which I felt aptly described YouCreate.
+        </p>
+      </div>
+    </div>
+  <div class="white">
+    <div class="container">
+      <div class="row">
+        <div class="col-6-sm col-6-lg leftwirebox ">
+          <img src="images/logosketches.png" alt="Logo Roughs" class="logos" />
+        </div>
+        <div class="col-6-sm col-6-lg leftwirebox " style="margin: auto">
+          <img src="images/yclogo.png" alt="Logo Roughs" class="logos" />
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
   </div>
 
-  <div class ="styleguide">
-    <div class="subdiv">
-      <h2 class="subheading"> Style Guide </h2>
-    </div>
-  <div class="box">
-    <div class="halfboxleft">
-      <img src="images/logosketches.jpeg" alt="Logo Roughs" class="logos" />
-    </div>
-    <div class="halfboxright">
-    <h2 class="title2">Logo Rough Drafts</h2>
-    <p class="textbox">
-      Here are my inital sketches of YouCreate's logo. Since the app is a file-sharing app, I wanted to invoke feelings of community and trust through my logo. the first starred item represents unity as the letters Y and C join and become one. The bottom starred logo sketch displays the letters in a representation of a home. The middle starred logo of a Venn Diagram was the logo I finally chose. The letters represent two different ideas coming together and merging as one which I felt aptly described YouCreate.
-      <br>
-      <br />
-      Below you will see the logo in its final stage:
-    </p>
-  </div>
-</div>
-</div>
   <div class="styleguidepic">
-    <div class="fullbox">
-    <img src="images/youcreatecolor.jpg" alt="styleguide" class="stylepic" />
-  </div>
-  </div>
-  <div class="fid">
-    <div class="subdiv">
-      <h2 class="subheading"> Wireframes </h2>
-    </div>
-    <div class="wirebox">
-      <div class="leftwirebox">
-        <img src="images/lowfid.jpg" alt="lowfid" class="lowfidimg" />
+    <div class="purple">
+      <div class="container">
+        <h2> Style Guide</h2>
+        <p>
+          After choosing the logo, I decided to pick the fonts. I went for Comfortaa as the title font and Nunito as the body font. These two sans-serif fonts give a creative yet professional tone. I made my primary color orange as it is associated with creativity, an important theme for Saas applications.
+        </p>
       </div>
-      <div class="rightwirebox">
-        <img src="images/highfid.jpg" alt="highfid" class="highfidimg" />
+    </div>
+    <div class="white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12-lg">
+            <img src="images/youcreatecolor.jpg" alt="styleguide" class="stylepic" />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
+  <div class="fid">
+    <div class="purple">
+      <div class="container">
+        <h2> Wireframes </h2>
+        <p>
+          After designing the low fidelity wireframes using Balsamiq, I went into Sketch to create the high fidelity designs that served as a reference when I actually coded the site.
+        </p>
+      </div>
+    </div>
+    <div class="white">
+      <div class="container">
+        <div class="row">
+          <div class="col-6-sm col-6-lg leftwirebox images">
+          <img src="images/lowfid.jpg" alt="lowfid" class="lowfidimg" />
+          </div>
+        <div class="col-6-sm col-6-lg  rightwirebox images">
+          <img src="images/highfid.jpg" alt="highfid" class="highfidimg" />
+      </div>
+    </div>
+  </div>
+    </div>
+
 </div>
 
     <div class="usertesting">
-      <div class="subdiv">
-        <h1 class="subheading">User Testing </h1>
-      </div>
-      <div class="research">
-        <p class="researchtext">
+      <div class="purple">
+      <div class="container">
+        <h2>User Testing </h2>
+        <p>
           During the process of designing YouCreate, user testing became of importance as I wanted to make sure YouCreate was user-friendly. In the example below, I conducted an A/B testing to see which version of the "Add button" a potential user might prefer. The test was performed on the site ,"Peek , and results showed that users preferred Prototype B.
         </p>
       </div>
-      <div class ="wirebox">
-      <div class="leftwirebox">
+      </div>
+    </div>
+
+    <div class="white">
+      <div class ="container">
+      <div class="row">
+        <div class="col-6-sm col-6-lg leftwirebox images">
         <img src="images/usertest1.png" alt="usertesting" class="usertest1" />
-      </div>
-      <div class="rightwirebox">
+        </div>
+        <div class="col-6-sm col-6-lg rightwirebox images">
         <img src="images/usertest2.png" alt="usertesting" class="usertest2" />
+        </div>
       </div>
-      </div>
+    </div>
+    </div>
+
     </div>
 
     <div class="finalsite">
-          <div class="subdiv">
-            <h1 class="subheading">Final Website </h1>
+          <div class="purple">
+            <div class="container">
+            <h2>Final Website </h2>
+            <p>
+            YouCreate was a rewarding project to work on as I learned from many different perspectives as a designer. Through the development process I learned what users want in a Software as a Service site (which were different from my  preconceived expectations), learned new software such as Sketch and Balsamiq, and learned from challenging aspects of creating a responsive website.
+            </p>
+            </div>
           </div>
-      <div class="fullbox">
-        <img src="images/finalsite.png" alt="final site" class="finalimg" />
-      </div>
-    </div>
-  </div>
+          <div class="white">
+            <div class="container">
+              <div class="row">
+                <div class="col-12-lg">
+                  <img src="images/finalsite.png" alt="final site" class="finalimg" />
+                </div>
+              </div>
+            </div>
+          </div>
 
+          </div>
+
+    </div>
 </div>
 
 <!-- Footer -->

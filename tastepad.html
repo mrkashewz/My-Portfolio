@@ -4,6 +4,10 @@
   <head>
     <meta charset="utf-8">
     <title>Ishar Keshu | UX/UI Designer</title>
+    <!-- BOOTSTRAP --->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href ="css/bootstrap-grid.css" />
     <!--- Google Fonts--->
     <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,700|Heebo:400,500" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -24,27 +28,21 @@
   <body>
 
                           <!--Nav Bar -->
-<nav id="navbar">
-  <nav class="innernav">
-    <a href="index.html"><div class="logowrapper">
-      <img src ='images/navlogo.png' alt= "Ishar Keshu Logo" class ="logo" />
-      <h1 class = "logoname">Ishar Keshu</h1>
-    </div></a>
-    <div class="mainNav">
-      <div class="collection">
-        <a href="aboutme.html">about</a>
-      </div>
-      <div class="collection">
-        <a href="index.html#portfolio">work</a>
-      </div>
-      <div class="collection">
-        <div class="hirebutton">
-        <a href="index.html#contact" class="hire-button">hire me</a>
-        </div>
-      </div>
-    </div>
-  </nav>
-</nav>
+                          <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                            <a class="navbar-brand" href="#"><img src ='images/navlogo.png' alt= "Ishar Keshu Logo" class="d-inline-block align-top" /></a>
+                              <h1 class = "logoname">Ishar Keshu</h1>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                              <div class="navbar-nav">
+                                <a class="nav-item nav-link active" href="#" style="cursor: default">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-item nav-link" href="aboutme.html">About</a>
+                                <a class="nav-item nav-link" href="#portfolio">Work</a>
+                                <a class="nav-item nav-link" href="#contact">Hire Me</a>
+                              </div>
+                            </div>
+                          </nav>
   <body>
 
 
@@ -54,53 +52,85 @@
     <h2 class="splashtitle2">Food Truck App</h2>
     <img src="images/tpmockup.png" class="splash2" />
   </div>
-  <div class="research">
-  <h2 class="title2"> Summary and Research</h1>
-    <h3>Summary</h3>
-      <p class="researchtext">
-      PayCrave is a food truck app that allows users to find and order from food trucks in their area. Users also have the option of creating an account, placing a review on a particular food truck, adding or removing payment methods and reviewing purchase history.
-      </p>
-    <h3>Research</h3>
-        <p class="researchtext">
-      PayCrave's userflow was inspired by many of today's popular social apps such as Yelp, UberEats and Lyft. For instance, the reviews feature at the bottom of food truck's menu was a concept borrowed from Yelp's review/rating system. This is an important feature as first-time customers would have an informed opinion of the food truck before ordering. This feature has sadly not been implemented in popular food delivery apps such as Caviar or UberEats.
-      </p>
+  <div class="purple">
+    <div class="container">
+    <h2> Summary and Research</h2>
+      <h3>Summary</h3>
+        <p>
+        TastePad is a food truck app that allows users to find and order from food trucks in their area. Users also have the option of creating an account, placing a review on a particular food truck, adding or removing payment methods and reviewing purchase history.
+        </p>
+      <h3>Problem</h3>
+          <p>
+        TastePad's userflow was inspired by some of the shortcomings of today's popular delivery/service apps such as Caviar, UberEats and Lyft. For instance, UberEats and Caviar don't have a review or rating system for their restaurants/vendors. It would be helpful for a potential user to see other customer's reviews on the food before ordering.
+        </p>
+      <h3> Solution</h3>
+        <p>
+          To address the task of adding a review feature, I studied Yelp's review and rating system, which is a defining feature of its app. I added the ratings and reviews of each food truck on its respective landing pages.
+        </p>
+      </div>
+  </div>
+
+<div class="styleguide">
+  <div class="container">
+      <div class="white">
+      <h2> Style Guide </h2>
+    <p>
+      Studies have shown that the color red induces feelings of hunger. This is why many fast food companies such as McDonald's use red as their primary color. Likewise, I wanted to incorporate red as TastePad's primary color along with its complementary color, green, as an "action" color.
+    </p>
+    <div class="styleguidepic images">
+      <img src="images/tastepadstyleguide.png" alt="styleguide" class="stylepic" style="padding:10px" />
     </div>
+    </div>
+  </div>
+  </div>
+</div>
+
     <div class="tastemockups">
-      <div class="subdiv">
-        <h1 class="subheading"> High Fidelity Mock Ups </h1>
+        <div class="purple">
+          <div class="container">
+          <h2> High Fidelity Mock Ups </h2>
+          <p>
+        After signing in, users will be directed to a map view of their location and the local food trucks around them. They also have the option of viewing the food trucks in a list format by pressing the “list” toggle tab. After clicking on the food truck of their choice they can then start placing their order as well as see reviews. Afterwards they will be taken to an order confirmation page where they can review their order as well as choose or add a payment option. Once confirmed, they will be given an order confirmation message and code and an option to review their food once they’ve eaten it.
+        </p>
+        </div>
       </div>
-      <div class="tastecontainer">
-      <div class="tastebox1">
-        <div class="tastediv">
-          <img src="images/taste1.png" alt="tastepad mock up" class="tastepadimg" />
-        </div>
 
-        <div class="tastediv">
-          <img src="images/taste2.png" alt="tastepad mock up" class="tastepadimg" />
-        </div>
+    <div class="white">
+      <div class="container images">
+        <div class="tastebox1">
+          <div class="tastediv">
+            <img src="images/taste1.png" alt="tastepad mock up" class="tastepadimg" />
+          </div>
+
+          <div class="tastediv">
+            <img src="images/taste2.png" alt="tastepad mock up" class="tastepadimg" />
+          </div>
 
 
-        <div class="tastediv">
-          <img src="images/taste3.png" alt="tastepad mock up" class="tastepadimg" />
+          <div class="tastediv">
+            <img src="images/taste3.png" alt="tastepad mock up" class="tastepadimg" />
+          </div>
+      </div>
+
+        <div class="tastebox2">
+          <div class="tastediv">
+            <img src="images/taste4.png" alt="tastepad mock up" class="tastepadimg" />
+          </div>
+
+
+          <div class="tastediv">
+            <img src="images/taste5.png" alt="tastepad mock up" class="tastepadimg" />
+          </div>
+
+          <div class="tastediv">
+            <img src="images/taste6.png" alt="tastepad mock up" class="tastepadimg" />
+          </div>
         </div>
+      </div>
+      </div>
     </div>
+  </div>
 
-      <div class="tastebox2">
-        <div class="tastediv">
-          <img src="images/taste4.png" alt="tastepad mock up" class="tastepadimg" />
-        </div>
-
-
-        <div class="tastediv">
-          <img src="images/taste5.png" alt="tastepad mock up" class="tastepadimg" />
-        </div>
-
-        <div class="tastediv">
-          <img src="images/taste6.png" alt="tastepad mock up" class="tastepadimg" />
-        </div>
-      </div>
-    </div>
-      </div>
 
 
       <!-- Footer -->
