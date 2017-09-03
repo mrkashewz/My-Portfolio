@@ -156,20 +156,8 @@ body {
 
       /* NAV BAR */
 
-/*#navbar {
-  height: 100px;
-  position: fixed;
-  background-color: #ffffff;
-  display: block;
-  width: 100%;
-  z-index: 1000;
-  top: 0;
-  -webkit-box-shadow: 0 7px 6px -6px #999;
-    -moz-box-shadow: 0 7px 6px -6px #999;
-    box-shadow: 0 7px 6px -6px #999;
-}*/
-
-
+.navbar-collapse {
+  background-color: white;
 }
 
 a:hover {
@@ -179,6 +167,27 @@ a:hover {
 
 a {
   text-decoration: none;
+}
+
+.navbar-toggler::before {
+  border-bottom: 9px solid rgba(0, 0, 0, 0.2);
+  border-left: 9px solid rgba(0, 0, 0, 0);
+  border-right: 9px solid rgba(0, 0, 0, 0);
+  content: "";
+  display: inline-block;
+  left: 86px;
+  position: absolute;
+  top: -8px;
+}
+.navbar-toggler::after {
+  border-bottom: 8px solid #FFFFFF;
+  border-left: 9px solid rgba(0, 0, 0, 0);
+  border-right: 9px solid rgba(0, 0, 0, 0);
+  content: "";
+  display: inline-block;
+  left: 86px;
+  position: absolute;
+  top: -7px;
 }
 
 .logo {
@@ -231,6 +240,14 @@ a {
 
 .nav-link:hover {
   color:purple;
+}
+
+.bg-white {
+  background-color: #ededed!important;
+}
+
+.navbar-collapse {
+  background-color: #ededed;
 }
 
       /* LANDING PAGE */
@@ -296,9 +313,10 @@ a:hover {
 
 .landingheading1 {
   font-family: 'Heebo', sans-serif;
-  font-size: 1.8em;
+  font-size: 3em;
   display: none;
   line-height: 1.4em;
+  padding-bottom: .3em;
 }
 
 .landingheading2 {
@@ -308,9 +326,10 @@ a:hover {
   color: white;
   opacity: 0.8;
   font-family: 'Montserrat', sans-serif;
-  font-size: 0.9em;
+  font-size: 1em;
   text-transform: inherit;
   line-height: 1.4em;
+  padding-top: 0px;
 }
 
 
@@ -321,7 +340,6 @@ a:hover {
   color: white;
   text-align: center;
   display: block;
-  font-size: 1.3em;
 }
 
 
@@ -365,7 +383,9 @@ a:hover {
 
 .portfoliocontainer:nth-child(2) {
   padding-bottom: 0px;
+  padding-top: 2em;
 }
+
 
 .portfoliocontainer {
   margin: auto 0;
@@ -383,7 +403,7 @@ a:hover {
 .portimage {
   display: inline-block;
   margin: auto 0;
-  padding: 3em;
+  padding-right: 3em;
 }
 
 
@@ -395,6 +415,8 @@ a:hover {
   color: #A67F5B;
   text-align: left;
   opacity: 0.8;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 .casestudy {
@@ -549,10 +571,7 @@ a:hover {
   margin: 0 auto;
 }
 
-.label {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
+
 /*@media(min-width: 768px){
   .form {
     width: 70%;
@@ -641,6 +660,14 @@ a:hover {
   font-size: 3em;
   }
 
+.casep {
+  font-family: 'Catamaran', sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0px;
+  padding-top: 0px;
+}
 
 .casesub {
   font-family: 'Catamarran', sans-serif;
