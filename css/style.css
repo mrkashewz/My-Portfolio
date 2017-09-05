@@ -49,6 +49,10 @@ body {
   padding-top: 5em;
 }
 
+.padtop {
+  padding-top: 2em;
+}
+
 @media(max-width:768px){
   .container {
     width: 70%;
@@ -164,31 +168,14 @@ a:hover {
   cursor: pointer;
 }
 
+#navbarNavAltMarkup {
+  text-align : center;
+}
 
 a {
   text-decoration: none;
 }
 
-.navbar-toggler::before {
-  border-bottom: 9px solid rgba(0, 0, 0, 0.2);
-  border-left: 9px solid rgba(0, 0, 0, 0);
-  border-right: 9px solid rgba(0, 0, 0, 0);
-  content: "";
-  display: inline-block;
-  left: 86px;
-  position: absolute;
-  top: -8px;
-}
-.navbar-toggler::after {
-  border-bottom: 8px solid #FFFFFF;
-  border-left: 9px solid rgba(0, 0, 0, 0);
-  border-right: 9px solid rgba(0, 0, 0, 0);
-  content: "";
-  display: inline-block;
-  left: 86px;
-  position: absolute;
-  top: -7px;
-}
 
 .logo {
   float: left;
@@ -204,12 +191,11 @@ a {
 .logoname {
   font-family: 'Heebo', sans-serif;
   font-size: 1.5em;
-  font-weight: 400;
+  font-weight: 500;
   color: #5B5EA6;
   /*padding-left: 20px;*/
   justify-content: center;
   margin: auto 0;
-  text-transform: uppercase;
   /*width:30%;*/
 }
 
@@ -236,18 +222,19 @@ a {
   width: 100%;
   top: 0;
   opacity: 0.99;
+  padding: 0.1rem 1em;
 }
 
-.nav-link:hover {
-  color:purple;
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #515495;
 }
 
 .bg-white {
-  background-color: #ededed!important;
+  background-color: aliceblue!important;
 }
 
 .navbar-collapse {
-  background-color: #ededed;
+  background-color: aliceblue;
 }
 
       /* LANDING PAGE */
@@ -380,13 +367,6 @@ a:hover {
    padding-bottom: 1em;
 }
 
-
-.portfoliocontainer:nth-child(2) {
-  padding-bottom: 0px;
-  padding-top: 2em;
-}
-
-
 .portfoliocontainer {
   margin: auto 0;
   display: flex;
@@ -394,6 +374,10 @@ a:hover {
 }
 
 
+
+.portfoliocontainer:nth-child(2) {
+  padding-top: 2em;
+}
 
 .portinfo {
   display: inline-block;
@@ -403,9 +387,13 @@ a:hover {
 .portimage {
   display: inline-block;
   margin: auto 0;
-  padding-right: 3em;
 }
 
+@media(min-width:1000px){
+  .portimage {
+    padding-right: 3em;
+  }
+}
 
 .porttitle {
   text-transform: inherit;
@@ -602,6 +590,7 @@ a:hover {
   text-align: center;
   min-width: 50%;
   height: 100%;
+  background-color: aliceblue;
 }
 .footertitle {
   font-family: 'Heebo', sans-serif;
@@ -613,7 +602,7 @@ a:hover {
   margin: auto 0;
 }
 .footerimg {
-  width: 75px;
+  /*width: 75px;*/
   height: 75px;
   padding: 10px 20px;
 

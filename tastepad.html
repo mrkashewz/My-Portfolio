@@ -6,7 +6,6 @@
     <title>Ishar Keshu | UX/UI Designer</title>
     <!-- BOOTSTRAP --->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href ="css/bootstrap-grid.css" />
     <!--- Google Fonts--->
     <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,700|Heebo:400,500" rel="stylesheet">
@@ -29,17 +28,17 @@
 
                           <!--Nav Bar -->
                           <nav class="navbar navbar-expand-lg navbar-light bg-white">
-                            <a class="navbar-brand" href="#"><img src ='images/navlogo.png' alt= "Ishar Keshu Logo" class="d-inline-block align-top" /></a>
+                            <a class="navbar-brand" href="index.html"><img src ='images/navlogo.png' alt= "Ishar Keshu Logo" class="d-inline-block align-top" /></a>
                               <h1 class = "logoname">Ishar Keshu</h1>
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                               <span class="navbar-toggler-icon"></span>
                             </button>
-                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="collapse navbar-collapse col-lg-4" id="navbarNavAltMarkup">
                               <div class="navbar-nav">
-                                <a class="nav-item nav-link active" href="#" style="cursor: default">Home <span class="sr-only">(current)</span></a>
+                                <a class="nav-item nav-link" href="index.html" style="cursor: default">Home <span class="sr-only">(current)</span></a>
                                 <a class="nav-item nav-link" href="aboutme.html">About</a>
-                                <a class="nav-item nav-link" href="#portfolio">Work</a>
-                                <a class="nav-item nav-link" href="#contact">Hire Me</a>
+                                <a class="nav-item nav-link" href="index.html#portfolio">Work</a>
+                                <a class="nav-item nav-link" href="index.html#contact">Hire Me</a>
                               </div>
                             </div>
                           </nav>
@@ -61,8 +60,12 @@
           </p>
         <h3 class="label-text-purple"><span class="labelpurple">Problem</span></h3>
             <p>
-          TastePad's userflow was inspired by some of the shortcomings of today's popular delivery/service apps such as Caviar, UberEats and Lyft. For instance, UberEats and Caviar don't have a review or rating system for their restaurants/vendors. It would be helpful for a potential user to see other customer's reviews on the food before ordering.
+          TastePad's userflow was inspired by some of the shortcomings of today's popular delivery/service apps such as Caviar, UberEats and Lyft. For instance, UberEats and Caviar don't have a review or rating system for their restaurants/vendors.
           </p>
+          <h3 class="label-text-purple"><span class="labelpurple">Solution</span></h3>
+              <p>
+            By adding the rating system, the potential user can see other customers' reviews on the food before ordering, which will be a valuable influence on which food truck he or she will choose from.
+            </p>
       </div>
   </div>
 
@@ -84,8 +87,7 @@
 
     <div class="tastemockups">
         <div class="purple">
-          <div class="container">
-            <h2 ="titlepurple"> Solution </h2>
+          <div class="container ctop">
               <h3 class="label-text-purple"><span class="labelpurple">High Fidelity Mock Ups</span></h3>
                 <p>
               After signing in, users will be directed to a map view of their location and the local food trucks around them. They also have the option of viewing the food trucks in a list format by pressing the “list” toggle tab. After clicking on the food truck of their choice they can then start placing their order as well as see reviews. The review system was based of Yelp's model which is a defining feature of its app. I added the ratings and reviews of each food truck on its respective landing pages. After placing their order, the customers will be taken to an order confirmation page where they can review their order as well as choose or add a payment option. Once confirmed, they will be given an order confirmation message and code and an option to review their food once they’ve eaten it.
@@ -145,10 +147,6 @@
 </footer>
 
   <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-  <script>
-$( ".rightbox:even" ).css({
-"background-color": "white" ,
-'color': '#5A5FA9' });
-</script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
   </body>
 </html>
